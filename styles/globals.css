@@ -79,7 +79,9 @@ body {
   overflow-x: hidden;
 }
 
-body {}
+body {
+  background-color: white;
+}
 
 a {
   color: inherit;
