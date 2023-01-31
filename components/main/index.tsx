@@ -23,7 +23,7 @@ export default function Main() {
 
     return (
         <main className='flex justify-center items-center py-20'>
-            <div className='p-10 rounded-md border border-slate-300 md:w-1/2'>
+            <div className='p-10 rounded-md border border-slate-300 md:w-1/2 text-black'>
                 <h1 className='text-3xl mb-20 text-center font-light'>Qrcode Generator</h1>
 
                 <div className="grid md:grid-cols-3 md:gap-10">
