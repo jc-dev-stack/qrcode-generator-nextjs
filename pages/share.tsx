@@ -19,7 +19,7 @@ export default function Share(props: IPropsShare) {
         <LayoutDefault titlePage='Share'>
             <div className='flex flex-col items-center justify-center mt-10'>
                 <SVG
-                    text={data}
+                    text={decodeURI(data)}
                     options={{
                         level: 'M',
                         margin: margin ?? 3,

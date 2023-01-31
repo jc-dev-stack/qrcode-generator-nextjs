@@ -2,8 +2,7 @@ import { useQRCode } from "next-qrcode";
 import React, { useEffect, useState } from "react";
 import Input from "../input";
 import Select, { PropsOption } from "../select";
-import { EmailIcon, EmailShareButton, FacebookIcon, FacebookShareButton, WhatsappIcon, WhatsappShareButton } from "react-share";
-import Link from "next/link";
+import { FacebookIcon, FacebookShareButton, WhatsappIcon, WhatsappShareButton } from "react-share";
 export default function Main() {
     const { SVG } = useQRCode();
     const [text, setText] = useState("");
@@ -30,7 +29,9 @@ export default function Main() {
     }, [])
 
     const getUrlShare = () => {
-        return `${url}share?data=${text}&size=${size}&dark=${colorOne.replace("#", '')}&light=${colorTwo.replace("#", '')}&margin=${margin}`;
+        const uri = `${url}share?data=${text}&size=${size}&dark=${colorOne.replace("#", '')}&light=${colorTwo.replace("#", '')}&margin=${margin}`;
+        const encode = encodeURI(uri);
+        return encode;
     }
     return (
         <main className='flex justify-center items-center py-20'>
