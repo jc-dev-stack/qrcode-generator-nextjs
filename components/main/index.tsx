@@ -42,8 +42,8 @@ export default function Main() {
                 </div>
                 <div className="md:mt-0 mt-10">
                     <h1 className="font-light text-3xl border-b border-slate-300 mb-5">Mude as cores</h1>
-                    <Input id={"color1"} textLabel={"#1"} type={"color"} className={""} value={`${colorOne}`} onChange={(e) => { setColorOne(e.target.value) }} />
-                    <Input id={"color2"} textLabel={"#2"} type={"color"} className={""} value={`${colorTwo}`} onChange={(e) => { setColorTwo(e.target.value) }} />
+                    <Input id={"color1"} textLabel={"#1"} type={"color"} className={"bg-white"} value={`${colorOne}`} onChange={(e) => { setColorOne(e.target.value) }} />
+                    <Input id={"color2"} textLabel={"#2"} type={"color"} className={"bg-white"} value={`${colorTwo}`} onChange={(e) => { setColorTwo(e.target.value) }} />
                 </div>
                 <div>
                     <h1 className="font-light text-3xl border-b border-slate-300 mb-5">Qrcode</h1>

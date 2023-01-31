@@ -18,7 +18,7 @@ class Input extends React.Component<IPropsInput> {
                     htmlFor={id}>{textLabel ?? "Label"}</label>
                 <input
                     id={id}
-                    className="border border-slate-300 p-3 rounded-md"
+                    className="border border-slate-300 p-3 rounded-md bg-white"
                     {...rest} />
             </div>
         )

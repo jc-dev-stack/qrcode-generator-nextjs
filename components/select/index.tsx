@@ -24,7 +24,7 @@ class Select extends React.Component<IPropsInput> {
                     htmlFor={id}>{textLabel ?? "Label"}</label>
                 <select
                     id={id}
-                    className="border border-slate-300 p-3 rounded-md w-52"
+                    className="border border-slate-300 p-3 rounded-md w-52 bg-white"
                     {...rest}>
                     {options.map((op, index) => <option key={index} value={op.value}>{op.text}</option>)}
                 </select>
